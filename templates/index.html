@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="archive">
+  {% for article in articles %}
+  <h2><a href="{{ article.url }}#article">{{ article.title }}</a></h2>
+  <time datetime="{{ article.date.isoformat() }}">
+    {{ article.locale_date }}
+  </time>
+  <hr>
+  {% else %}
+  Nothing yet!
+  {% endfor %}
+</div>
+{% endblock content %}
