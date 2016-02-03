@@ -24,9 +24,10 @@
   <time class="published" datetime="{{ article.date.isoformat() }}">
     {{ article.locale_date }}
   </time>
+
   Share:
   <a class="twitter-share-button"
-      href="https://twitter.com/intent/tweet?text={{ article.title}} by @marcorougeth - https://rgth.co/{{ article.url }}">Twitter</a>
+      href="https://twitter.com/intent/tweet?text={{ article.title}} - https://blog.pythonbrasil.org.br/{{ article.url }}">Twitter</a>
   <div id="disqus_thread"></div>
   <script>
       /**
